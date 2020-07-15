@@ -8,6 +8,8 @@ export function PokemonsContainer() {
     });
 
     return (
-        
-    )
+        <div className="container">
+            {pokemons && pokemons.map(pokemon => <Pokemon key={pokemon.id} pokemon={pokemon} />)}
+        </div>
+    );
 }
